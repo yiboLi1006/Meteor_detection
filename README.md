@@ -22,4 +22,4 @@ Train_val__test_meteor_detection_cnn.py
 # 训练性能
 <img src="./test_info/training_curves_enhanced_0821_1923.png" width="65%" alt="训练曲线图"/>
 <img src="./test_info/roc_curve_20250822_123528.png" width="65%"/ >
-<img src="./test_info/confusion_matrix_20250822_123528" width="65%"/ >
+<img src="./test_info/confusion_matrix_20250822_123528.png" width="65%"/ >
