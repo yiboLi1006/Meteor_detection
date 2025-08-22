@@ -5,7 +5,18 @@
 - 由于Github无法上传较大文件,故模型参数已被拆分为多个小文件,位于`./model_parts`下,首次使用,需要运行`./merge_model.py`以合并为`Detection.py`需要的参数文件,届时将出现`./model.pth`
 
 # 运行逻辑
-- `Camera_jpg_data`将首先通过图像预处理pipeline,包括图像增强与阈值分割(由`image_processing_pipeline.py`定义),随后由模型筛选
+- `Camera_jpg_data`将首先通过图像预处理pipeline,包括图像增强与阈值分割(由`image_processing_pipeline.py`定义),随后由模型筛选.
+  
+  <table style="width:100%; border-collapse: collapse;">
+  <tr>
+    <td style="text-align: center; padding: 5px; border: none;">
+      <img src="./test_info/processing_steps_visualization.png" width="100%" />
+    </td>
+    <td style="text-align: center; padding: 5px; border: none;">
+      <img src="./test_info/visualization_1.png" width="100%" />
+    </td>
+  </tr>
+</table>
 
 # 模型训练
 `Train_val__test_meteor_detection_cnn.py`
