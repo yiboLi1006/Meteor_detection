@@ -19,6 +19,7 @@ Train_val__test_meteor_detection_cnn.py
 - 模型有轻微的过拟合现象
 - 训练集不够多样化
 
+# 训练性能
 <img src="./test_info/training_curves_enhanced_0821_1923.png" width="65%" alt="训练曲线图"/>
 <img src="./test_info/roc_curve_20250822_123528.png" width="65%"/>
 
