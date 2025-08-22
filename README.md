@@ -20,8 +20,6 @@ Train_val__test_meteor_detection_cnn.py
 - 训练集不够多样化
 
 # 训练性能
-<img src="./test_info/training_curves_enhanced_0821_1923.png" width="65%" alt="训练曲线图"/>
-
 <img src="./test_info/training_curves_enhanced_0821_1923.png" width="100%" alt="训练曲线图"/>
 <table style="width:100%; border-collapse: collapse;">
   <tr>
