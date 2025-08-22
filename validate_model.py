@@ -341,5 +341,6 @@ def validate_model_performance(model_path, data_dir=None):
 
 if __name__ == '__main__':
 
-    model_path = r'./meteor_detection_best_model_0821_1923.pth'
+    model_path = r'./model.pth'
+
     validate_model_performance(model_path)
