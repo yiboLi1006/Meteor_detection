@@ -8,7 +8,7 @@
 - `Camera_jpg_data`将首先通过图像预处理pipeline,包括图像增强与阈值分割(由`image_processing_pipeline.py`定义),随后由模型筛选
 
 # 模型训练
-Train_val__test_meteor_detection_cnn.py
+`Train_val__test_meteor_detection_cnn.py`
 - 原始数据集正负样本极端不平衡,采用多种方法扩大数据集(翻转,旋转...),平衡样本比重(SMOTE对较少的正类样本超采样,`SMOTE_oversampling.py`)
 - 考虑到实际场景需求,在训练中强化了对正类样本的权重
 - 为提高流星检测的召回率，采用低决策阈值：`prediction_threshold=0.3` 而非常规的`0.5`，优先保证正类样本的识别
