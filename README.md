@@ -2,7 +2,7 @@
 - 一个基于深度学习的流星轨迹识别,在风光摄影场景下,筛选出大量星空照片中含有流星轨迹的部分
 # 使用方法
 - 在`./Camera_jpg_data`下存放需要筛选的图像(jpg格式),直接运行`./Detection.py`即开始处理,结果输出于`./result`
-- 由于Github无法上传较大文件,故模型参数已被拆分为多个小文件,位于`./model_parts`下,首次使用,需要运行`./merge_model.py`以合并为`Detection.py`需要的参数文件,届时将出现`./model.pth,由./Detection.py`
+- 由于Github无法上传较大文件,故模型参数已被拆分为多个小文件,位于`./model_parts`下,首次使用,需要运行`./merge_model.py`以合并为`Detection.py`需要的参数文件,届时将出现`./model.pth`
 
 # 运行逻辑
 - `Camera_jpg_data`将首先通过图像预处理pipeline,包括图像增强与阈值分割(由`image_processing_pipeline.py`定义),随后由模型筛选
