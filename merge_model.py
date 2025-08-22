@@ -3,7 +3,7 @@ import json
 
 # 配置参数
 PARTS_DIR = './model_parts'
-OUTPUT_FILE = './reconstructed_model.pth'
+OUTPUT_FILE = './model.pth'
 
 # 读取元数据
 with open(os.path.join(PARTS_DIR, 'metadata.json'), 'r') as f:
@@ -38,4 +38,5 @@ print(f"重建文件大小: {reconstructed_size} 字节")
 if reconstructed_size == original_size:
     print("✓ 文件大小匹配，合并成功！")
 else:
+
     print("✗ 文件大小不匹配，合并可能有问题。")
