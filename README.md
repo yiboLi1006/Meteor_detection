@@ -12,14 +12,9 @@
 Train_val__test_meteor_detection_cnn.py
 - 原始数据集正负样本极端不平衡,采用多种方法扩大数据集(翻转,旋转...),平衡样本比重(SMOTE对较少的正类样本超采样,SMOTE_oversampling.py)
 - 考虑到实际场景需求,在训练中强化了对正类样本的权重
-- 为提高流星检测的召回率，采用低决策阈值：
-- 设置 prediction_threshold=0.3 而非常规的0.5，优先保证正类样本的识别
-- 在评估函数中使用配置的阈值替代硬编码值，提高灵活性
+- 为提高流星检测的召回率，采用低决策阈值：prediction_threshold=0.3 而非常规的0.5，优先保证正类样本的识别
 - 混合精度训练
-- 梯度累积
-- 学习率自适应调度
 - 早停机制 ：early_stopping_patience=10 , early_stopping_delta=0.001
-- 权重衰减正则化
 
 # 不足
 - 模型有轻微的过拟合现象
