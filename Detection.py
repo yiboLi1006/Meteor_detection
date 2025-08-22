@@ -233,7 +233,7 @@ if __name__ == "__main__":
     # 定义各文件夹路径（使用相对路径）
     INPUT_FOLDER = "./Camera_jpg_data"
     OUTPUT_FOLDER = "./result"
-    MODEL_PATH = "./meteor_detection_best_model_0821_1923.pth"
+    MODEL_PATH = "./model.pth"
     
     # 记录开始时间
     start_time = time.time()
@@ -259,4 +259,5 @@ if __name__ == "__main__":
     if success:
         print(f"\n流星检测成功完成！总耗时: {total_time:.2f} 秒")
     else:
+
         print(f"\n流星检测执行失败，请查看错误信息。总耗时: {total_time:.2f} 秒")
