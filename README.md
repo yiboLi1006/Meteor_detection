@@ -27,7 +27,6 @@
 - 早停机制 ：`early_stopping_patience=10` , `early_stopping_delta=0.001`
 
 # V1的不足
-- 原始的`OptimizedMeteorCNN`模型采用传统架构，主要存在以下局限性：
 
 - 缺乏方向感知：传统卷积核各向同性，对所有方向特征的提取能力均等，未针对线状流星轨迹的优化
 
@@ -37,7 +36,7 @@
 
 # V2更新
 ## 方向感知卷积层
-- 在原网络的第二阶段添加了4个方向的类`Gabor`滤波器（0°、45°、90°、135°），专门用于捕获不同角度的线性流星轨迹特征：
+- 在原网络添加了4个方向的类`Gabor`滤波器（0°、45°、90°、135°），专门用于捕获不同角度的线性流星轨迹特征：
 
 ```python
 # 方向感知卷积层定义
@@ -49,7 +48,7 @@ self.directional_conv135 = nn.Conv2d(64, 16, kernel_size=7, stride=1, padding=3)
 self._init_directional_kernels()
 ```
 
-## 方向卷积核的设计与初始化
+## 方向卷积核
 - 使用预定义的类Gabor滤波器初始化方向卷积核，滤波器在提取边缘和线性特征
 ```python
 def _init_directional_kernels(self):
