@@ -46,7 +46,6 @@ self.directional_conv45 = nn.Conv2d(64, 16, kernel_size=7, stride=1, padding=3)
 self.directional_conv90 = nn.Conv2d(64, 16, kernel_size=7, stride=1, padding=3)
 self.directional_conv135 = nn.Conv2d(64, 16, kernel_size=7, stride=1, padding=3)
 
-# 类Gabor滤波器初始化
 self._init_directional_kernels()
 ```
 
@@ -77,7 +76,7 @@ def _init_directional_kernels(self):
         self.directional_conv90.weight.copy_(torch.tensor(np.repeat(kernel_90, 16, axis=0), dtype=torch.float32))
         self.directional_conv135.weight.copy_(torch.tensor(np.repeat(kernel_135, 16, axis=0), dtype=torch.float32))
 ```
-### 方向特征融合
+## 方向特征融合
 - 将四个方向的特征图进行拼接融合，形成更丰富的方向信息表示
 
 ```python
