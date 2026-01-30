@@ -92,6 +92,6 @@ x = self.directional_relu(x)
 
 ```
 
-# Supplement
+# 测试集表现
 <img src="./test_info/confusion_matrix_20260130_083850.png" width="100%" alt="验证"/>
 <img src="./test_info/training_curves_enhanced_0129_1833.png" width="100%" alt="curve"/>
