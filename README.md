@@ -1,4 +1,4 @@
-# Meteor_detection_v2
+# Meteor_detection
 - 一个基于深度学习的流星轨迹识别,在风光摄影场景下,筛选出大量星空照片中含有流星轨迹的部分
 # 使用方法
 - 在`./Camera_jpg_data`下存放需要筛选的图像(jpg格式),直接运行`./Detection.py`即开始处理,结果输出于`./result`
