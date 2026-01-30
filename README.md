@@ -94,13 +94,4 @@ x = self.directional_relu(x)
 
 # Supplement
 <img src="./test_info/confusion_matrix_20260130_083850.png" width="100%" alt="验证"/>
-<table style="width:100%; border-collapse: collapse;">
-  <tr>
-    <td style="text-align: center; padding: 5px; border: none;">
-      <img src="./test_info/roc_curve_20250822_123528.png" width="100%" />
-    </td>
-    <td style="text-align: center; padding: 5px; border: none;">
-      <img src="./test_info/confusion_matrix_20250822_123528.png" width="100%" />
-    </td>
-  </tr>
-</table>
+<img src="./test_info/confusion_matrix_custom_20260130_083850.png" width="100%" alt="curve"/>
