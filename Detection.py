@@ -11,7 +11,7 @@ from torchvision import transforms
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from Train_val__test_meteor_detection_cnn import Config, OptimizedMeteorCNN, MeteorDataset, Dataset
+from Train_val__test_meteor_detection_cnn_v2 import Config, OptimizedMeteorCNN, MeteorDataset, Dataset
 from image_processing_pipeline import process_image, split
 
 # 创建一个自定义数据集类，直接使用PIL图像对象
@@ -261,3 +261,4 @@ if __name__ == "__main__":
     else:
 
         print(f"\n流星检测执行失败，请查看错误信息。总耗时: {total_time:.2f} 秒")
+
