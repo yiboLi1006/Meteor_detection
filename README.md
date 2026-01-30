@@ -2,9 +2,7 @@
 - 一个基于深度学习的流星轨迹识别,在风光摄影场景下,筛选出大量星空照片中含有流星轨迹的部分
 # 使用方法
 - 在`./Camera_jpg_data`下存放需要筛选的图像(jpg格式),直接运行`./Detection.py`即开始处理,结果输出于`./result`
-- 下载`meteor_detection_best_model_0129_1833.pth` ：链接: https://pan.baidu.com/s/1pYAefLJ8RyIexhkmZ1VF2Q?pwd=mi1x 提取码: mi1x
-
-存放于一级目录
+- 下载`meteor_detection_best_model_0129_1833.pth` ：链接: https://pan.baidu.com/s/1pYAefLJ8RyIexhkmZ1VF2Q?pwd=mi1x 提取码: mi1x，存放于一级目录
 
 # 运行逻辑
 - `Camera_jpg_data`将首先通过图像预处理pipeline,包括图像增强与阈值分割(由`image_processing_pipeline.py`定义),随后由模型筛选.
