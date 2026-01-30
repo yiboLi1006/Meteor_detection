@@ -3,6 +3,7 @@
 # 使用方法
 - 在`./Camera_jpg_data`下存放需要筛选的图像(jpg格式),直接运行`./Detection.py`即开始处理,结果输出于`./result`
 - 下载`meteor_detection_best_model_0129_1833.pth` ：链接: https://pan.baidu.com/s/1pYAefLJ8RyIexhkmZ1VF2Q?pwd=mi1x 提取码: mi1x
+
 存放于一级目录
 
 # 运行逻辑
