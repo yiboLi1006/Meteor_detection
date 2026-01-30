@@ -93,7 +93,7 @@ x = self.directional_relu(x)
 ```
 
 # Supplement
-<img src="./test_info/training_curves_enhanced_0821_1923.png" width="100%" alt="训练曲线图"/>
+<img src="./test_info/confusion_matrix_20260130_083850.png" width="100%" alt="验证"/>
 <table style="width:100%; border-collapse: collapse;">
   <tr>
     <td style="text-align: center; padding: 5px; border: none;">
